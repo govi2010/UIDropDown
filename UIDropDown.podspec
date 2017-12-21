@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "UIDropDown"
   s.version      = "1.1.1"
-  s.swift = '>= 3.2'
+  s.swift_version = '>= 3.2'
   s.summary      = "An elegant dropdown for iOS written in Swift."
   s.description  = <<-DESC
 	UIDropDown allows you to pick an option in a beautiful table just like dropdowns in web. It contains 3 	differents animations to present the options table and can be modified in many ways.
