@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+@objc class ViewController: UIViewController {
     
     @IBOutlet weak var segmented: UISegmentedControl!
     var drop: UIDropDown!
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func segmentedDidChange(_ sender: UISegmentedControl) {
+    @objc func segmentedDidChange(_ sender: UISegmentedControl) {
         let index = sender.selectedSegmentIndex
         drop.animationType = UIDropDownAnimationType(rawValue: index)!
     }
